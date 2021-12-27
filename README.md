@@ -1,2 +1,3 @@
 # figlet
-figlet font for terminal
+
+[figlet](https://www.npmjs.com/package/figlet) font for terminal
