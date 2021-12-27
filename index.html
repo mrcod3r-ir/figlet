@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>figlet</title>
+	</head>
+	<body>
+		<script
+			type="text/javascript"
+			src="//cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="node_modules/figlet/lib/figlet.js"
+		></script>
+
+		<script>
+			figlet.defaults({ fontPath: "node_modules/figlet/fonts" })
+
+			figlet.preloadFonts(["Standard", "Ghost"], ready)
+
+			function ready() {
+				console.log(figlet.textSync("Hello World !"))
+				console.log(figlet.textSync("Art", "Ghost"))
+			}
+		</script>
+	</body>
+</html>
